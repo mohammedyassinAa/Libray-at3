@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détails du Livre</title>
+</head>
+<body>
+    <h1>{{ livre.titre }}</h1>
+    <p>Date de publication: {{ livre.date_publication }}</p>
+    <p>Auteur: {{ livre.auteur.nom }}</p>
+    <p>Date de naissance de l'auteur: {{ livre.auteur.date_naissance }}</p>
+    <a href="{% url 'liste_livres' %}">Retour à la liste des livres</a>
+</body>
+</html>
